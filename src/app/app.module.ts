@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http'; 
 
 import { AppComponent } from './app.component';
 import { ContatosListagemComponentComponent } from './contatos-listagem-component/contatos-listagem-component.component';
@@ -10,7 +11,8 @@ import { ContatosListagemComponentComponent } from './contatos-listagem-componen
     ContatosListagemComponentComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
